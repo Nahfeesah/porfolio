@@ -1,0 +1,60 @@
+<div class="about-container container-fluid j">
+    <div class="row">
+        <div class=" col-sm-4 p-5 image-div">
+            <img [src]="picture1" alt="My Picture " class="about-im img-fluid">
+        </div>
+        <div class="about col-sm-8 about-div">
+            <div class="px-5 pt-5 ">
+                <p>Hi there! I am {{myName}}, a Frontend and Mobile Application Developer based in Lagos Nigeria. A
+                    graduate of the Federal University of Agriculture Abeokuta,and have a passion for building websites.
+                </p>
+                <p>Using a wide range of software development tools, I create client-ready apps and websites with a
+                    strong focus on quality. I'm hardworking, easygoing, and value creativity, music, and exploring new
+                    ideas.</p>
+            </div>
+            <ul class="nav nav-pills justify-content-center">
+                <li [class.active]="viewMode == 'skill'">
+                    <a class=" btn btn-default mx-2" (click)="viewMode= 'skills'">Skills</a>
+                </li>
+                <li [class.active]="viewMode == 'certificates'">
+                    <a class="btn btn-default mx-2" (click)="viewMode= 'certificates'">Certificates</a>
+                </li>
+            </ul>
+            <div [ngSwitch]="viewMode" class="container switch">
+                <div *ngSwitchCase="'skills'" class="mx-5" @staggeredFade>
+                    <div>
+                        <p>Here are some of the technologies I have been working with:</p>
+                    </div>
+                    <div class="row">
+                    <div class=" col skill p">
+                        <p class="skillParagraph">HTML</p>
+                    </div>
+                    <div class="col skill">
+                        <p class="skillParagraph">CSS</p>
+                    </div>
+                    <div class="col skill">
+                        <p class="skillParagraph">JQuery</p>
+                    </div>
+                    <div class="col skill">
+                        <p class="skillParagraph">GIT</p>
+                    </div>
+                    <div class="col skill">
+                        <p class="skillParagraph">Cordova</p>
+                    </div>
+                    <div class="col skill">
+                        <p class="skillParagraph">BootStrap</p>
+                    </div>
+                    <div class="col skill">
+                        <p class="skillParagraph">JavaScript</p>
+                    </div>
+                    </div>
+                </div>
+                <div *ngSwitchCase="'certificates'" class="row" @staggeredFade>
+                    <div class="col"><img [src]="cerf1" alt="" class="img-fluid img-thumbnail"></div>
+                    <div class="col"><img [src]="cerf2" alt="" class="img-fluid img-thumbnail"></div>
+                    <div class="col"><img [src]="cerf3" alt="" class="img-fluid img-thumbnail"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="project-container">
+    <div class="p-3 project-title ">
+        <h3> Projects I have worked on</h3>
+    </div>
+    <div class="box">
+        <div class="card box1" style="width: 35rem;">
+            <img [src]="project2" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">HOLD A HAND</h5>
+                <div class="techFlex">
+                    <p *ngFor="let tech of techList" class="techInner">{{tech}}</p>
+                </div>
+                <p class="card-text">“Hold a Hand” fosters inclusivity by connecting companies with talented Persons
+                    with
+                    Disabilities, providing job
+                    opportunities, educational resources, and essential aid to support and empower this community.</p>
+                <a href="https://techgems-project.vercel.app/" target="_blank" class="btn project-link">Project Link</a>
+            </div>
+        </div>
+        <div class="card box1" style="width: 35rem;">
+            <img [src]="project1" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Neighborhood Watch</h5>
+                <div class="techFlex">
+                    <p *ngFor="let tech of techList " class="techInner">{{tech}}</p>
+                </div>
+                <p class="card-text">Neighborhood Watch is a Citizens Reporting Solution App in which Users can submit an incident i.e. Accident, Fighting,
+                rioting etc. to the Server and other App Users would be able to view the submitted incidents in real time..</p>
+                <a href="#" class="btn project-link">Project Link</a>
+            </div>
+        </div>
+        <div class="card box1" style="width: 35rem;">
+            <img [src]="project" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nafeesah Portolio</h5>
+                <div class="techFlex">
+                    <p *ngFor="let tech of techList " class="techInner">{{tech}}</p>
+                </div>
+                <p class="card-text">This is my first portfolio project, designed to showcase my skills and projects
+                    while exploring the power of Angular.
+                    Built from scratch, the project emphasizes responsive design and interactive elements to create a
+                    user-friendly experience.</p>
+                <a href="https://nahfeesah.github.io/Angular-Portfolio/" target="_blank" class="btn project-link">Project link</a>
+            </div>
+        </div>
+    </div>
+</div>

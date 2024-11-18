@@ -1,0 +1,35 @@
+.about-img{
+  height: 350px;
+}
+.image-div{
+    background-color: #bc9ef3;
+    box-sizing: border-box;
+}
+.about-div{
+    box-sizing: border-box;
+}
+.btn{
+    background-color: #5e24ca;
+    color: white;
+}
+.btn:hover{
+    background-color: White;
+    color: #5e24ca;
+}
+.switch{
+    margin-top: 15px;
+}
+.skill{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+.skillParagraph{
+    border: 2px solid #5e24ca;
+    padding: 6px 16px;
+    border-radius: 20px;
+
+}

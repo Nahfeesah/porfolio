@@ -1,0 +1,38 @@
+.contact-box{
+    margin: auto;
+}
+.icon{
+    background-color: #5e24ca;
+    width: 64px;
+    border-radius: 50px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: 0;
+    font-size: 28px;
+    text-decoration: none;
+    
+}
+.a{
+    color: black;
+    text-decoration: #dfc7ff;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: larger;
+}
+.contact-box {
+    
+    padding: 20px;
+    background-color: #dfc7ff; /* Optional styling */
+}
+.icon-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
