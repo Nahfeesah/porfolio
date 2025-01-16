@@ -8,6 +8,9 @@
 .main-container {
 
     background-color: #5e24ca;
+    background-image: url('/assets/hero2.jpeg');
+    background-repeat: no-repeat; 
+    background-size: cover;
     height: 500px;
     /* You must set a specified height */
     background-position: center;
